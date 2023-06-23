@@ -21,7 +21,7 @@ class ExpirableTest extends TestCase
     {
         $model = ModelStub::make();
 
-        $this->assertContains('expires_at', $model->getDates());
+        $this->assertArrayHasKey('expires_at', $model->getCasts());
     }
 
     /** @test */

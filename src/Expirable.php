@@ -8,7 +8,6 @@ use Illuminate\Support\InteractsWithTime;
 
 /**
  * @property array $attributes
- * @property array $dates
  */
 trait Expirable
 {
@@ -21,7 +20,7 @@ trait Expirable
 
     public function initializeExpirable(): void
     {
-        $this->dates[] = $this->getExpiresAtColumn();
+        $this->casts[$this->getExpiresAtColumn()] = 'datetime';
     }
 
     /**
