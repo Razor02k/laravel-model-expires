@@ -3,7 +3,7 @@ name: tests
 on: [pull_request, push]
 
 jobs:
-  tests:
+  tests_laravel_9_10:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: true
