@@ -17,13 +17,13 @@ jobs:
             dbal: ^2.10
           - laravel: ^7.0
             testbench: ^5.0
-            dbal: ^3.5
+            dbal: ^2.10
           - laravel: ^8.0
             testbench: ^6.0
-            dbal: ^3.5
+            dbal: ^2.10
           - laravel: ^9.0
             testbench: ^7.0
-            dbal: ^3.5
+            dbal: ^2.10
           - laravel: ^10.0
             testbench: ^8.0
             dbal: ^3.5
